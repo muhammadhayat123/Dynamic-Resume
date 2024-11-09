@@ -1,13 +1,13 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dynamic Resume Builder</title>
+    <title>Advanced Resume Builder</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Dynamic Resume Builder</h1>
+    <h1>Advanced Resume Builder</h1>
     
     <form id="resume-form">
         <fieldset>
@@ -21,27 +21,45 @@
             
             <label for="phone">Phone No:</label>
             <input type="tel" id="phone" placeholder="Enter Your Phone Number" required>
+            
+            <label for="summary">Profile Summary:</label>
+            <textarea id="summary" placeholder="Brief Summary" rows="4" required></textarea>
         </fieldset>
 
         <fieldset>
             <legend>Education:</legend>
-            
             <label for="education">Education:</label>
-            <textarea id="education" placeholder="Enter Education" rows="5" required></textarea>
+            <textarea id="education" placeholder="Enter Education Details" rows="4" required></textarea>
         </fieldset>
 
         <fieldset>
             <legend>Work Experience:</legend>
-            
             <label for="experience">Work Experience:</label>
-            <textarea id="experience" placeholder="Enter Work Experience" rows="5" required></textarea>
+            <textarea id="experience" placeholder="Enter Work Experience Details" rows="4" required></textarea>
         </fieldset>
 
         <fieldset>
             <legend>Skills:</legend>
-            
             <label for="skills">Skills:</label>
-            <textarea id="skills" placeholder="Enter Skills" rows="5" required></textarea>
+            <textarea id="skills" placeholder="Enter Skills" rows="4" required></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Projects:</legend>
+            <label for="projects">Projects:</label>
+            <textarea id="projects" placeholder="Enter Project Details" rows="4" required></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Languages:</legend>
+            <label for="languages">Languages:</label>
+            <textarea id="languages" placeholder="Enter Languages Known" rows="3" required></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Certifications:</legend>
+            <label for="certifications">Certifications:</label>
+            <textarea id="certifications" placeholder="Enter Certifications" rows="3"></textarea>
         </fieldset>
 
         <button type="submit"><b>Generate Resume</b></button>
@@ -49,11 +67,18 @@
 
     <br>
 
-    <!-- Dynamic Resume -->
+    <!-- Dynamic Resume Display -->
     <div id="resume-display">
-        <!-- Resume will be generated below -->
+        
     </div>
 
     <script src="script.js"></script>
 </body>
-</html>
+</html>  
+
+
+  
+
+
+
+
